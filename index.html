@@ -38,18 +38,25 @@
                 width: 180px;
             }
 
-            div.gallery:hover {
-                border: 1px solid #777;
-            }
-
             div.gallery img {
                 width: 100%;
                 height: auto;
             }
 
-            div#myDiv {
-                transform: rotate(180deg); /* Standard syntax */
+            .gallery {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 120px;
+                height: 120px;
+                margin:-60px 0 0 -60px;
+                -webkit-animation:spin 4s linear infinite;
+                -moz-animation:spin 4s linear infinite;
+                animation:spin 4s linear infinite;
             }
+            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
     </style>
@@ -68,7 +75,7 @@
            </div>
                
                
-            <div id= mydiv class="gallery">
+            <div id="gallery">
                 <a target="_blank" href="freahsst.png">
                     <img src="freahsst.png" alt="Banner" width="600" height="400">
                 </a>
