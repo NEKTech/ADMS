@@ -74,6 +74,11 @@
             button:hover {
                 opacity: 0.8;
             }
+            
+            /*Extra Styles for Login Button*/
+            .Fbutton {
+                margin: -80px 500px;
+            }
 
             /* Extra styles for the cancel button */
             .cancelbtn {
@@ -199,7 +204,7 @@
                 </ul> 
            </div>
            <!--Login-->
-           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+           <button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;">Login</button>
 
         <div id="id01" class="modal">
   
@@ -246,47 +251,6 @@
         <br>
     
         <!-- Forms -->
-        <form action ="process.php" method = "post">
-            <div>
-            <label>First Name</label>
-            <input type="text" name="firstName" placeholder="Enter Firstname">
-        </div>
-        <br>
-        <div>
-            <label>Last Name</label>
-            <input type="text" name="LasttName">
-        </div>
-        <br>
-        <div>
-            <label>Email</label>
-            <input type="email" name="email">
-        </div>
-        <br>
-        <div>
-            <label>Message</label>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
-        </div>
-        <br>
-        <div>
-            <label>Gender</label>
-            <select name="Gender" id="">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="">Age:</label>
-            <input type="number" name="age" value="">
-        </div>
-        <br>
-        <div>
-            <label for="">Birthday:</label>
-            <input type="date" name="birthday">
-        </div>
-        <br>
-        <input type="submit" name="submit" value="Submit">
-        </form>
     </body>
       
 </html>
