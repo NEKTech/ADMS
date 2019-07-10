@@ -71,6 +71,15 @@
                 margin: 0%;
                 border-radius: 60%
             }
+            /*Extra Styles for title*/
+            .titleT{
+	            margin: 0% 30% 0% 0%;
+	        }
+            /*Extra Styles for contacts*/
+            .contacts{
+              border-style: solid;  
+              border-radius: 40%
+            }
 
             /* Extra styles for the cancel button */
             .cancelbtn {
@@ -179,10 +188,6 @@
             ul#horizontal-list li {
                 display: inline;
             }
-            .contacts{
-              border-style: solid;  
-              border-radius: 40%
-            }
     </style>
     </head>
 
@@ -191,13 +196,14 @@
         <!-- Intro -->
         <section id="intro">
            <div class="container">
-                <div class="table">
-                    <ul id="horizontal-list">
-                        <li><button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;" align="left"><i class="fa fa-user-o" style="font-size:36px"></i></button></li>
-                        <li class = "services" align="left">Services</li>
+               <div class="table">
+	                <ul id="horizontal-list">
+                        <li class = "titleT"><font size="72">ⒶⒹⓂⓈ</font></li>
+                        <li class = "services" align="right">Services</li>
+                        <li class = "events" align="right">Events</li>
                         <li class = "contacts" align="right">Contact</li>
-                        <li class = "titleT" align="right"><font size="72">ⒶⒹⓂⓈ</font></li>
-                    </ul>
+                        <li><button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;" align="right"><i class="fa fa-user-o" style="font-size:36px"></i></button></li>
+                     </ul>
                 </div>
                <h2>
                     <span class="automotive">Automotive</span>
