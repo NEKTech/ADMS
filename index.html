@@ -49,7 +49,7 @@
             }
             /*Extra Styles for title*/
             .titleT{
-	            margin: 0% 40% 0% 0%;
+	            margin: 0% 45% 0% 0%;
 	        }
 	    /*Extra Styles for events*/
 	    .events{
@@ -179,37 +179,46 @@
                 display: inline;
             }
             .diversity {
+            	margin: 10% 60% 0%;
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("city-view.jpg");
                 height: 50%;
                 background-position: bottom;
                 background-repeat: no-repeat;
                 background-size: cover;
-                position: relative;
+                position: absolute;
             }
 
             .diversity-text {
-                text-align: center;
+                text-align: right;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                color: white;
-            }
-
-            .diversity-text button {
-                border: none;
-                outline: 0;
-                display: inline-block;
-                padding: 10px 25px;
                 color: black;
-                background-color: #ddd;
-                text-align: center;
-                cursor: pointer;
             }
 
-            .diversity-text button:hover {
-                background-color: #555;
-                color: white;
+            
+            a {
+              text-decoration: none;
+              text-align: left;
+              display: inline-block;
+              padding: 8px 16px;
+            }
+  
+            a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            .next {
+              background-color: #000080;
+              color: white;
+            }
+            .previous {
+              background-color: #f1f1f1;
+              color: black;
+            }
+            .round {
+              border-radius: 50%;
             }
     </style>
     </head>
@@ -267,8 +276,8 @@
             <div class="diversity">
                 <div class="diversity-text">
                     <h2 style="font-size:50px">
-                        <button type="button"><a href="#" class="previous-round">&#8249;</a></button>
-                        <button type="button"><a href="#" class="next-round">&#8250;</a></button>
+                        <a href="#" class="previous round" style="font-size:25px">&#8249;</a>
+                	<a href="#" class="next round" style="font-size:25px">&#8250;</a>
                         <span class="automotive">Automotive</span>
                         <span class="dealer">Dealer</span>
                         <span class="management">Management</span>
@@ -277,9 +286,9 @@
                 </div>
             </div>
         </section>
+	        <!--Services-->
     
-        <!-- JavaScript -->
-	  <script>
+         <script>
         // Get the modal
         var modal = document.getElementById('id01');
 
