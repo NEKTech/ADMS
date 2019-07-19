@@ -212,14 +212,6 @@
             </div>
             
             <!--Banner section-->
-            <div class="w3-content w3-display-container">
-                  <img class="mySlides" src="city-view.jpg" style="width:100%">
-                  <img class="mySlides" src="freahsst.png" style="width:100%">
-                 
-                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                  
-           </div>
      
             
             <!--Services section-->
@@ -269,7 +261,7 @@
             }
         }
         var myIndex = 0;
-        carousel();
+           carousel();
 
         function carousel() {
           var i;
@@ -280,7 +272,7 @@
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}    
           x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 5000); // Change image every 5 seconds
+          setTimeout(carousel, 3000); // Change image every 5 seconds
         }
 
         var slideIndex = 1;
