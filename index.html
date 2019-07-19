@@ -84,6 +84,14 @@
             display: flex;
             justify-content: center;
             }
+            
+          .second {
+            border: 1px solid #fff;  /* For debugging */
+            width: 1500px;
+            display: flex;
+          justify-content: space-between;
+           
+        }
        
             /*Services pic example sections*/
 
@@ -242,11 +250,17 @@
             <!--Banner section-->
             <div class="header-container">
                   <div class ="header">
-                      <div class="mySlides" style="width:100%">Automotive</div>
+                      <div class="second">
+                         <div class="mySlides" style="width:100%">Automotive</div>
+                         <div class="mySlides" style="width:100%">Dealer</div>
+                      </div>
                       <div class="fresh">
                         <div class="mySlides" style="width:100%">Dealer</div>
                       </div>
-                      
+                      <div class="back">
+                        <button class="w3-button w3-black w3-display-topleft" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-white w3-display-topleft" onclick="plusDivs(1)">&#10095;</button>
+                     </div>
                </div>
            </div>
      
