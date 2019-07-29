@@ -74,7 +74,32 @@
                 .eDrp{
                 box-shadow: 0px 1px 0px 0px #888888;
                 }
+           /*Sticky bar*/
+            #menu a:hover {
+                  background-color: #ddd;
+                  color: black;
+                }
+
+                #menu a.active {
+                  background-color: #4CAF50;
+                  color: white;
+                }
+
+                .content {
+                  padding: 16px;
+                }
+
+                .sticky {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                }
+
+                .sticky + .content {
+                  padding-top: 60px;
+                }
             
+            /*No underline button*/
             a:link {
                   text-decoration: none;
             }
@@ -377,7 +402,7 @@
                 <div class='links'>
                     <div><button onclick="document.getElementById('id02').style.display='block'" class="events" style="width:auto;">Events</button></div>
                    <div class="dropdown">
-                    <div><button onclick="document.getElementById('id02').style.display='block'" class="services" style="width:auto;">Service<i class="fa fa-caret-down"></i></button></div>
+                    <div><button onclick="document.getElementById('id02').style.display='block'" class="services" style="width:auto;">Service <i class="fa fa-caret-down"></i></button></div>
                         <div class="dropdown-content">
                                 <ul style="list-style-type:none;">
                                     <div>
@@ -493,6 +518,8 @@
 
                   </form>
              </div>
+            
+            <!--Events-->
     
         <!--JavaScript-->
          <script>
@@ -548,6 +575,20 @@
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
+        }
+        
+         // Sticky Nav Bar
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
         }
         </script>
     </body>
