@@ -242,7 +242,7 @@
                 <div class='links'>
                     <div class = "events">Events</div>
                     <div class = "services">Services</div>
-                    <div class = "contact">Contact</div>
+                    <div><button onclick="location.href = 'https://nektech.github.io/ADMS/#/contact';" id="contact" class="float-left submit-button" >Contact</button></div>
                     <div><button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;"><i class="fa fa-user-o" ></i></button></div>
                 </div>
             </div>
@@ -315,6 +315,13 @@
                 modal.style.display = "none";
             }
         }
+        
+        // Contact 
+        <script type="text/javascript">
+              document.getElementById("contact").onclick = function () {
+                location.href = "https://nektech.github.io/ADMS/#/contact";
+               };
+         
         var myIndex = 0;
            carousel();
 
