@@ -49,6 +49,29 @@
             justify-content: center;
             align-items: center;
         }
+            
+          .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  padding: 12px 16px;
+                  z-index: 1;
+                }
+
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+
+                .eDrp{
+                box-shadow: 0px 1px 0px 0px #888888;
+                }
 
         .events,
         .services,
@@ -343,7 +366,17 @@
                 <div class = "titleT"><font size="72">ADMS</font></div>
                 <div class='links'>
                     <div class = "events">Events</div>
+                   <div class="dropdown">
                     <div class = "services">Services</div>
+                        <div class="dropdown-content">
+                                <ul style="list-style-type:none;">
+                                    <div>
+  	                               <li class="eDrp" href="#crm">CRM Training</li>
+                                       <li class="eDrp" href="#salesT">Sales Training</li>
+                                     </div>
+                                  </ul>
+                           </div>
+                        </div>
                     <div><button onclick="document.getElementById('id02').style.display='block'" class="contact" style="width:auto;">Contact</button></div>
                     <div><button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;"><i class="fa fa-user-o" ></i></button></div>
                 </div>
