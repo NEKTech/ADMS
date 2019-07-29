@@ -112,27 +112,6 @@
             color: #FFFFFF;
             }
 
-            /*Services pic example sections*/
-            .photo-grid-container {
-                  display: flex;
-                  justify-content: center;
-                }
-
-                .photo-grid {
-                  width: 900px;
-                  height: 40%;
-                  display: flex;
-                  justify-content: flex-start;
-                  flex-direction: row;
-                  align-items: flex-start;
-                }
-
-                .photo-grid-item {
-                  border: 1px solid #fff;
-                  width: 50px;
-                  height: 50px;
-                }
-
             
             input[type=text], input[type=password] {
                 width: 100%;
@@ -323,6 +302,23 @@
                 width: 60%; /* Could be more or less, depending on screen size */
             }
             
+            /*Services pic example sections*/
+            .column {
+                  float: left;
+                  width: 55%;
+                  padding: 10px;
+                }
+
+                .column2 {
+                  float: left;
+                  width: 40%;
+                  padding: 10px;
+                  margin-top:100px;
+
+                  display: flex;
+                  justify-content: center;
+
+                }
 
     </style>
     <body>
@@ -375,14 +371,12 @@
      
             
             <!--Services section-->
-            <div class='photo-grid-container'>
-                  <div class='photo-grid'>
-                    <div class='photo-grid-item first-item'>
-                      <img src='office.jpg'/>
-                    </div>
-                  </div>
-           </div>
-
+              <div class="column">
+                    <img src="office.jpg" alt="Nature" style="width:100%">
+                </div>
+                <div class="column2">
+  	            <p> Something goes here</p>
+                </div>
             
             <!--Login Form-->
             
