@@ -76,11 +76,6 @@
                 }
            /*Sticky bar*/
 
-                .sticky {
-                  position: fixed;
-                  top: 0;
-                  width: 100%;
-                }
             
             /*No underline button*/
             a:link {
@@ -170,6 +165,12 @@
                 border: none;
                 cursor: pointer;
                 width: 100%;
+            }
+            
+            .w3-button{
+            width: 5%
+            padding: 5px;
+            margin: 8px 0;
             }
 
             button:hover {
@@ -505,9 +506,9 @@
             <!--Events-->
             <h2 class="w3-center">Events</h2>
             <div class="w3-content w3-display-container">
-                  <img class="mySlides" src="profile.png" style="width:100%">
-                  <img class="mySlides" src="profile.png" style="width:100%">
-                  <img class="mySlides" src="profile.png" style="width:100%">
+                  <img class="mySlidesM" src="profile.png" style="width:100%">
+                  <img class="mySlidesM" src="profile.png" style="width:100%">
+                  <img class="mySlidesM" src="profile.png" style="width:100%">
 
                   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -535,7 +536,7 @@
             }
         }
                  
-        // Slideshow
+        // Slideshow Auto
         var myIndex = 0;
            carousel();
 
@@ -569,6 +570,25 @@
           x[slideIndex-1].style.display = "block";  
         }
         
+         // SlideShow Manual
+           var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlidesM");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+            }
+                 
          // Sticky Nav Bar
         window.onscroll = function() {myFunction()};
 
