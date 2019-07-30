@@ -379,8 +379,8 @@
     <body>
             
             <!--Menu section-->
-            <div class='menu-container'>
-            <div class='menu' id="menu">
+            <div id='menu-container' class='menu-container'>
+            <div id='menu' class='menu'>
                 <div class = "titleT"><font size="72">ADMS</font></div>
                 <div class='links'>
                     <div><button onclick="document.getElementById('id02').style.display='block'" class="events" style="width:auto;">Events</button></div>
@@ -566,7 +566,7 @@
          // Sticky Nav Bar
         window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementById("menu");
+        var navbar = document.getElementById("menu-container");
         var sticky = navbar.offsetTop;
 
         function myFunction() {
