@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta name="description" content="Automotive Dealer Management Services">
+            <meta name="keywords" content>
+            <meta charset="UTF-8">
+            <meta name="viewpoint" content="width=device-width, initial-scale=1">
+            <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+            <title>ADMS</title>
+            <link rel='stylesheet' href='styles.css'/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        </head>
+        
+        <style>
+  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .menu-container {
+            color: #fff;
+            background-color: #000080;  /* Blue */
+            padding: 20px 0;
+            display: flex;
+            
+        }
+        .menu {
+            border: 1px solid #fff;  /* For debugging */
+            width: 1500px;
+            display: flex;
+          justify-content: space-between;
+           
+        }
+        .titleT{
+            margin-left: 15px;
+        }
+        .links {
+            border: 1px solid #fff;  /* For debugging */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            
+          .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                .dropdown-content {
+                  display: none;
+                  color: black;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  border-radius: 7%;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  padding: 12px 16px;
+                  z-index: 1;
+                }
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                .eDrp{
+                box-shadow: 0px 1px 0px 0px #888888;
+                }
+            
+            /*No underline button*/
+            a:link {
+                  text-decoration: none;
+            }
+            a:visited {
+                  text-decoration: none;
+            }
+        .Fbutton{
+            margin-left: 20px;
+        }
+        input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            /* Set a style for all buttons */
+            button {
+                background-color: #000080;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+             .contact,
+            .events,
+            .services{
+                padding: 0;
+                border-radius: 100%;
+                background-color: #000080;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            
+            .Fbutton{
+                padding: 0;
+                border-radius: 100%;
+                background-color: #000080;
+                margin-right: 20px;
+                font-size: 22px;
+            }
+            
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+            
+            /*Avatar pic for pop up fix*/
+            
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+            img.avatar {
+                width: 25%;
+                border-radius: 60%;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                padding-top: 60px;
+            }
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 60%; /* Could be more or less, depending on screen size */
+            }
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            
+            .modal .small {
+                font-size: 13px;
+            }
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)} 
+                to {-webkit-transform: scale(1)}
+            }
+            
+            @keyframes animatezoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+         </style>
+    <body>
+            
+            <!--Menu section-->
+            <div id='menu-container' class='menu-container'>
+            <div id='menu' class='menu'>
+                <div class = "titleT"><font size="72">ADMS</font></div>
+                <div class='links'>
+                    <div><button onclick="document.getElementById('id02').style.display='block'" class="events" style="width:auto;">Events</button></div>
+                   <div class="dropdown">
+                    <div><button onclick="document.getElementById('id02').style.display='block'" class="services" style="width:auto;">Service <i class="fa fa-caret-down"></i></button></div>
+                        <div class="dropdown-content">
+                                <ul style="list-style-type:none;">
+                                    <div>
+                                       <li class="eDrp"><a href="#crm">CRM Training</a></li>
+                                       <li class="eDrp"><a href="#salesT">Sales Training</a></li>
+                                       <li class="eDrp"><a href="#salesM">Sales Management</a></li>
+                                       <li class="eDrp"><a href="#directM">Direct Mail</a></li>
+                                     </div>
+                                  </ul>
+                           </div>
+                        </div>
+                    <div><button onclick="document.getElementById('id02').style.display='block'" class="contact" style="width:auto;">Contact</button></div>
+                    <div><button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;"><i class="fa fa-user-o" ></i></button></div>
+                </div>
+            </div>
+            </div>
+            
+            <!--JavaScript-->
+         <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        </script>
+    </body>
+      
+</html>
