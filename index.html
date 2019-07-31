@@ -346,17 +346,19 @@
                 <div class='links'>
                     <div><button class="events" style="width:auto;"><a href="#events">Events</a></button></div>
                    <div class="dropdown">
-                        <div><button class="services" onclick="window.location.href='servicesT'" style="width:auto;">Service <i class="fa fa-caret-down"></i></button></div>
-                                <ul style="list-style-type:none;">
-                                    <div>
-                                       <li class="eDrp"><a href="#crm">CRM Training</a></li>
-                                       <li class="eDrp"><a href="#salesT">Sales Training</a></li>
-                                       <li class="eDrp"><a href="#salesM">Sales Management</a></li>
-                                       <li class="eDrp"><a href="#directM">Direct Mail</a></li>
-                                     </div>
-                                  </ul>
-                           </div>
+                        <div><button onclick="serviceT'" class="services" style="width:auto;">Service <i class="fa fa-caret-down"></i></button></div>
+                            <div class="dropdown-content">
+                                    <ul style="list-style-type:none;">
+                                        <div>
+                                            <li class="eDrp"><a href="#crm">CRM Training</a></li>
+                                            <li class="eDrp"><a href="#salesT">Sales Training</a></li>
+                                            <li class="eDrp"><a href="#salesM">Sales Management</a></li>
+                                            <li class="eDrp"><a href="#directM">Direct Mail</a></li>
+                                        </div>
+                                    </ul>
+                            </div>
                         </div>
+                    </div>
                     <div><button class="contact" style="width:auto;"><a href="contact.html">Contact</a></button></div>
                     <div><button onclick="document.getElementById('id01').style.display='block'" class="Fbutton" style="width:auto;"><i class="fa fa-user-o" ></i></button></div>
                 </div>
@@ -403,8 +405,8 @@
               <div class="column">
                     <img src="office.jpg" alt="Nature" class="office" style="width:100%">
                 </div>
+               <h3 class="w3-center" id="crm">CRM Training</h3>
                 <div class="column2">
-                  <h3 class="w3-center" id="crm">CRM Training</h3> 
   	            <p> Something goes here</p>
                 </div>
             </div>
