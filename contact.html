@@ -213,39 +213,35 @@
                 
                             /*Contact Form Styling*/
             /* Style inputs with type="text", select elements and textareas */
-             .contactForm {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                padding-top: 60px;
-            }
-            
-            textarea{
-                  width: 100%; /* Full width */
-                  padding: 12px; /* Some padding */  
-                  border: 1px solid #ccc; /* Gray border */
-                  border-radius: 4px; /* Rounded borders */
-                  box-sizing: border-box; /* Make sure that padding and width stays in place */
-                  margin-top: 6px; /* Add a top margin */
-                  margin-bottom: 16px; /* Bottom margin */
-                  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-            }
-            
-          input[type=submit] {
-                  background-color: #000080;
+                input[type=text], select, textarea {
+                  width: 100%;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  margin-top: 6px;
+                  margin-bottom: 16px;
+                  resize: vertical;
+                }
+
+                input[type=submit] {
+                  background-color: #4CAF50;
                   color: white;
-                  padding: 10px 18px;
-                  margin: 8px 0;
+                  padding: 12px 20px;
                   border: none;
+                  border-radius: 4px;
                   cursor: pointer;
-           }
+                }
+
+                input[type=submit]:hover {
+                  background-color: #45a049;
+                }
+
+                .contactForm {
+                  border-radius: 5px;
+                  background-color: #f2f2f2;
+                  padding: 20px;
+                }
             
             input[type=submit]:hover {
                   opacity: 0.8;
@@ -261,20 +257,6 @@
                 width: 60%; /* Could be more or less, depending on screen size */
             }
             
-            /*Services pic example sections*/
-            .service-continer{
-                background-color: #99badd;
-                display: flex;
-            }
-            .column {
-                  float: left;
-                  width: 55%;
-                  margin-top: 15px;
-                  border-top-right-radius: 7%;
-                  border-bottom-right-radius: 7%;
-                  box-shadow: 5px 20px 25px #888888;
-                  
-                }
          </style>
     <body>
             
@@ -335,8 +317,8 @@
         </div>
             
               <!--Contact Form-->
-            <div id="id02" class="contactForm">
-                  <form class="contactForm-content animate" action="action_page.php">
+            <div class="contactForm">
+                  <form class="contactForm-content" action="action_page.php">
                  <div class="container">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name..">
@@ -351,7 +333,7 @@
                     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
                  </div>
                     <div class="contactButts" style="background-color:#f1f1f1">
-                        <input type="submit" value="Submit">
+                        <input type="submit" href="mailto:joshua_townsend5@yahoo.com?" value="Submit">
                         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
                     </div>
 
