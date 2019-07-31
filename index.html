@@ -74,12 +74,6 @@
                 .eDrp{
                 box-shadow: 0px 1px 0px 0px #888888;
                 }
-           /*Sticky bar*/
-            .sticky {
-                  position: fixed;
-                  top: 0;
-                  width: 100%;
-                }
             
             /*No underline button*/
             a:link {
@@ -593,19 +587,6 @@
                   x[slideIndex-1].style.display = "block";  
             }
                  
-         // Sticky Nav Bar
-        window.onscroll = function() {myFunction()};
-
-        var navbar = document.getElementById("menu");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
         </script>
     </body>
       
