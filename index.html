@@ -165,12 +165,6 @@
                 width: 100%;
             }
             
-            w3-button{
-            width: 5%
-            padding: 5px;
-            margin: 8px 0;
-            }
-
             button:hover {
                 opacity: 0.8;
             }
@@ -292,70 +286,6 @@
                 }
             }
             
-            /*Contact Form Styling*/
-            /* Style inputs with type="text", select elements and textareas */
-             .contactForm {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                padding-top: 60px;
-            }
-            
-            textarea{
-                  width: 100%; /* Full width */
-                  padding: 12px; /* Some padding */  
-                  border: 1px solid #ccc; /* Gray border */
-                  border-radius: 4px; /* Rounded borders */
-                  box-sizing: border-box; /* Make sure that padding and width stays in place */
-                  margin-top: 6px; /* Add a top margin */
-                  margin-bottom: 16px; /* Bottom margin */
-                  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-            }
-            
-          input[type=submit] {
-                  background-color: #000080;
-                  color: white;
-                  padding: 10px 18px;
-                  margin: 8px 0;
-                  border: none;
-                  cursor: pointer;
-           }
-            
-            input[type=submit]:hover {
-                  opacity: 0.8;
-            }
-
-
-
-            /* Contact Content/Box */
-            .contactForm-content {
-                background-color: #fefefe;
-                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-                border: 1px solid #888;
-                width: 60%; /* Could be more or less, depending on screen size */
-            }
-            
-            /*Services pic example sections*/
-            .service-continer{
-                background-color: #99badd;
-                display: flex;
-            }
-            .column {
-                  float: left;
-                  width: 55%;
-                  margin-top: 15px;
-                  border-top-right-radius: 7%;
-                  border-bottom-right-radius: 7%;
-                  box-shadow: 5px 20px 25px #888888;
-                  
-                }
             
             img.office{
              border-top-right-radius: 7%;
@@ -476,30 +406,6 @@
             </form>
                 <div class="text-center small">Don't have an account? <a href="#">Sign up</a></div>
         </div>
-            
-        <!--Contact Form-->
-            <div id="id02" class="contactForm">
-                  <form class="contactForm-content animate" action="action_page.php">
-                 <div class="container">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Email..">
-
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject">
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                 </div>
-                    <div class="contactButts" style="background-color:#f1f1f1">
-                        <input type="submit" value="Submit">
-                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-
-                  </form>
-             </div>
             
             <!--Events-->
             <h2 class="w3-center" id="events">Events</h2>
