@@ -314,20 +314,19 @@
             
               <!--Contact Form-->
             <div class="contactForm">
-                  <form class="contactForm-content" action="action_page.php">
-                 <div class="container">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Full name..">
+                  <form class="contactForm-content" method="post" action="mailto:joshua_townsend5@yahoo.com?subject=Questions" enctype="text/plain" >
+                         <div class="container">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Full name..">
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Email..">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Email..">
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                     <form method="post" action="mailto:youremail@youremail.com?subject=Questions" enctype="text/plain">
-                            <input type="submit" value="Submit" /> 
-                     </form>
-                 </div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>               
+                             <input type="submit" value="Submit" /> 
+                             </form>
+                         </div>
              </div>
             <!--JavaScript-->
          <script>
