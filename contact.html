@@ -165,7 +165,10 @@
                 margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
                 border: 1px solid #888;
                 width: 60%; /* Could be more or less, depending on screen size */
+                display: flex;
+                justify-content: flex-end;
             }
+                
             /* The Close Button (x) */
             .close {
                 position: absolute;
@@ -244,8 +247,24 @@
                 margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
                 border: 1px solid #888;
                 width: 60%; /* Could be more or less, depending on screen size */
+                display: flex;
+                justify-content: flex-end;
             }
             
+             .directContact {
+                float: left;
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 60%; /* Could be more or less, depending on screen size */
+                border-top-right-radius: 7%;
+                  border-bottom-right-radius: 7%;
+                  box-shadow: 5px 20px 25px #888888;
+                display: flex;
+                justify-content: flex-start;
+            }
+            
+             
          </style>
     <body>
             
@@ -273,6 +292,17 @@
             </div>
             </div>
                  
+            <!--Direct Contact-->
+            
+            <div class="directContact">
+                    <p>Please contact us for more information about our innovative solutions, career opportunities, or strategic partnerships.</p>
+                    <br/>
+                    <br/>
+                    <ul>
+                            <li><i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:joshua_townsend5@yahoo.com">Some Email</a></li>
+                            <li><i class="fa fa-phone" style="font-size:24px"></i><a href="tel:757-803-4308"><757-803-4308></a>
+                    </ul>
+            </div>
               <!--Contact Form-->
             <div class="contactForm">
                   <form class="contactForm-content" method="post" action="mailto:joshua_townsend5@yahoo.com?subject=Questions" enctype="text/plain" >
@@ -287,7 +317,7 @@
                             <input type="text" id="subject" name="subject" placeholder="Subject">
                                  
                               <form enctype="multipart/form-data" action="upload.php" method="POST">
-                                    <p>Upload your file</p>
+                                    <p>Upload your Resume</p>
                                     <input type="file" name="uploaded_file"></input><br/>
                                </form>
                                <br/>
