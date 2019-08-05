@@ -153,15 +153,6 @@
             
             /*Avatar pic for pop up fix*/
             
-            .imgcontainer {
-                text-align: center;
-                margin: 24px 0 12px 0;
-                position: relative;
-            }
-            img.avatar {
-                width: 25%;
-                border-radius: 60%;
-            }
             
             .container {
                 padding: 16px;
@@ -290,7 +281,30 @@
                 display: flex;
                 justify-content: stretch;
             }
-            
+            /* Footer-Contact*/
+              .footer {
+                  display: flex;
+                  justify-content: space-between;
+                }
+
+                .footer-item {
+                  border: 1px solid #fff;
+                  background-color: #99badd;
+                  height: 200px;
+                  flex: 1;
+                }
+                
+                .footer-three {
+                  flex: 2;
+                }
+                
+                .footer-one,
+                .footer-three {
+                  background-color: #000080;
+                  flex: initial;
+                  width: 300px;
+                }
+                
          </style>
     <body>
             
@@ -356,16 +370,16 @@
              </div>
             
                     <!--Footer Contact-->
-            
-            <div class="directContact">
-                    <p>Please contact us for more information about our innovative solutions, career opportunities, or strategic partnerships.</p>
-                    <br/>
-                    <br/>
-                    <ul>
-                            <li><i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:joshua_townsend5@yahoo.com">Some Email</a></li>
-                            <li><i class="fa fa-phone" style="font-size:24px"></i><a href="tel:757-803-4308"><757-803-4308></a>
+         
+                <div class='footer'>
+                  <div class='footer-item footer-one'></div>
+                    <ul style="list-style-type:none;">
+                         <li><i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:joshua_townsend5@yahoo.com">Some Email</a></li>
+                         <li><i class="fa fa-phone" style="font-size:24px"></i><a href="tel:757-803-4308"><757-803-4308></a>
                     </ul>
-            </div>
+                  <div class='footer-item footer-two'></div>
+                  <div class='footer-item footer-three'></div>
+                </div>
                     
             <!--JavaScript-->
          <script>
