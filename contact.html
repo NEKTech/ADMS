@@ -357,24 +357,28 @@
 
                             <label for="email">Email</label>
                             <input type="text" id="email" name="email" placeholder="Email">
-                           <?php 
+                           
                             <label for="subject">Subject</label>
-                            $subject = "<input type="text" id="subject" name="subject" placeholder="Subject">";
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
                                  
                               <form enctype="multipart/form-data" action="upload.php" method="POST">
                                     <p>Upload your Resume</p>
-                                   $resume = "<input type="file" name="uploaded_file"></input><br/>";
+                                   <input type="file" name="uploaded_file"></input><br/>
                                </form>
                                <br/>
 
                             <label for="message">Message</label>
-                            $msg = "<textarea id="message" name="message" placeholder="Write here.." style="height:200px"></textarea>";
-                                mail("joshua_townsend5@yahoo.com",$subject,$msg,$resume);
+                            <textarea id="message" name="message" placeholder="Write here.." style="height:200px"></textarea>
                              <input type="submit" value="Submit" />
-                            ?>
                          </div>
                     </form>
              </div>
+         <?php
+                 $subject = "<input type="text" id="subject" name="subject" placeholder="Subject">";
+                $resume = "<input type="file" name="uploaded_file"></input><br/>";
+                $msg = "<textarea id="message" name="message" placeholder="Write here.." style="height:200px"></textarea>";
+                mail("joshua_townsend5@yahoo.com",$subject,$msg,$resume);
+        ?>
                     <!--Footer Contact-->
          
                 <div class='footer'>
