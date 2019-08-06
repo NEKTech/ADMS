@@ -350,6 +350,7 @@
 
               <!--Contact Form-->
             <div class="contactForm">
+                    <form class="contactForm-content" method="post" action="mailto:joshua_townsend5@yahoo.com?subject=Questions" enctype="text/plain" >
                          <div class="container">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Full name..">
@@ -358,11 +359,11 @@
                             <input type="text" id="email" name="email" placeholder="Email">
                            <?php 
                             <label for="subject">Subject</label>
-                            $subject = "<input type="text" id="subject" name="subject" placeholder="Subject">"
+                            $subject = "<input type="text" id="subject" name="subject" placeholder="Subject">";
                                  
                               <form enctype="multipart/form-data" action="upload.php" method="POST">
                                     <p>Upload your Resume</p>
-                                   $resume = "<input type="file" name="uploaded_file"></input><br/>"
+                                   $resume = "<input type="file" name="uploaded_file"></input><br/>";
                                </form>
                                <br/>
 
@@ -372,6 +373,7 @@
                              <input type="submit" value="Submit" />
                             ?>
                          </div>
+                    </form>
              </div>
                     <!--Footer Contact-->
          
@@ -392,7 +394,7 @@
          <script>
      
         </script>
-            <?PHP
+            <?php
                   if(!empty($_FILES['uploaded_file']))
                   {
                     $path = "uploads/";
