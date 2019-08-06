@@ -361,7 +361,7 @@
                             <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="Subject">
                                  
-                              <form enctype="multipart/form-data" action="upload.php" method="POST">
+                              <form enctype="multipart/form-data" action="mailto:joshua_townsend5@yahoo.com" method="POST">
                                     <p>Upload your Resume</p>
                                    <input type="file" name="uploaded_file"></input><br/>
                                </form>
@@ -373,12 +373,6 @@
                          </div>
                     </form>
              </div>
-         <?php
-                 $subject = "<input type="text" id="subject" name="subject" placeholder="Subject">";
-                $resume = "<input type="file" name="uploaded_file"></input><br/>";
-                $msg = "<textarea id="message" name="message" placeholder="Write here.." style="height:200px"></textarea>";
-                mail("joshua_townsend5@yahoo.com",$subject,$msg,$resume);
-        ?>
                     <!--Footer Contact-->
          
                 <div class='footer'>
