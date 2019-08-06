@@ -21,8 +21,6 @@
         }
         
         .menu-container {
-            position: fixed;
-            top: 0;
             color: #fff;
             background-color: #000080;  /* Blue */
             padding: 20px 0;
@@ -359,23 +357,24 @@
 
                             <label for="email">Email</label>
                             <input type="text" id="email" name="email" placeholder="Email">
-                                 
+                           <?php 
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                            $subject = "<input type="text" id="subject" name="subject" placeholder="Subject">"
                                  
                               <form enctype="multipart/form-data" action="upload.php" method="POST">
                                     <p>Upload your Resume</p>
-                                    <input type="file" name="uploaded_file"></input><br/>
+                                   $resume = "<input type="file" name="uploaded_file"></input><br/>"
                                </form>
                                <br/>
 
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Write here.." style="height:200px"></textarea>               
-                             <input type="submit" value="Submit" /> 
+                            $msg = "<textarea id="message" name="message" placeholder="Write here.." style="height:200px"></textarea>";
+                                mail("joshua_townsend5@yahoo.com",$subject,$msg,$resume);
+                             <input type="submit" value="Submit" />
+                            ?>
                              </form>
                          </div>
              </div>
-            
                     <!--Footer Contact-->
          
                 <div class='footer'>
