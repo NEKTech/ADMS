@@ -19,10 +19,8 @@
             box-sizing: border-box;
         }
             
-
             
             /*Title and Menu*/
-
         .menu-container {
             color: #fff;
             background-color: #000080;  /* Blue */
@@ -30,18 +28,15 @@
             display: flex;
             
         }
-
         .menu {
             width: 1500px;
             display: flex;
           justify-content: space-between;
            
         }
-
         .titleT{
             margin-left: 15px;
         }
-
         .links {
             display: flex;
             justify-content: center;
@@ -52,7 +47,6 @@
                   position: relative;
                   display: inline-block;
                 }
-
                 .dropdown-content {
                   display: none;
                   color: black;
@@ -64,11 +58,9 @@
                   padding: 12px 16px;
                   z-index: 1;
                 }
-
                 .dropdown:hover .dropdown-content {
                   display: block;
                 }
-
                 .eDrp{
                 box-shadow: 0px 1px 0px 0px #888888;
                 }
@@ -77,14 +69,12 @@
             a:link {
                   text-decoration: none;
             }
-
             a:visited {
                   text-decoration: none;
             }
             
             /*Banner Work*/
         .mySlides {display:none;}
-        .w3-badge {height:13px;width:13px;padding:0;display:flex;justify-content: center}
    
         .header-container {
             color: #FFFFFF;
@@ -138,7 +128,6 @@
             font-size: 15px;
             color: #FFFFFF;
             }
-
             
             input[type=text], input[type=password] {
                 width: 100%;
@@ -148,7 +137,6 @@
                 border: 1px solid #ccc;
                 box-sizing: border-box;
             }
-
             /* Set a style for all buttons */
             button {
                 background-color: #000080;
@@ -167,7 +155,7 @@
             
             .contact,
             .events,
-            .services,{
+            .services{
                 padding: 0;
                 border-radius: 100%;
                 background-color: #000080;
@@ -182,16 +170,13 @@
             }
             
             /*Avatar pic for pop up fix*/    
-
             .container {
                 padding: 16px;
             }
-
             span.psw {
                 float: right;
                 padding-top: 16px;
             }
-
             /* The Close Button (x) */
             .close {
                 position: absolute;
@@ -205,19 +190,16 @@
             .modal .small {
                 font-size: 13px;
             }
-
             .close:hover,
             .close:focus {
                 color: red;
                 cursor: pointer;
             }
-
             /* Add Zoom Animation */
             .animate {
                 -webkit-animation: animatezoom 0.6s;
                 animation: animatezoom 0.6s
             }
-
             @-webkit-keyframes animatezoom {
                 from {-webkit-transform: scale(0)} 
                 to {-webkit-transform: scale(1)}
@@ -227,7 +209,6 @@
                 from {transform: scale(0)} 
                 to {transform: scale(1)}
             }
-
             /* Change styles for span and cancel button on extra small screens */
             @media screen and (max-width: 300px) {
                 span.psw {
@@ -285,7 +266,6 @@
             margin-left: 8px;
             }
             
-
     </style>
     <body>
             
@@ -344,8 +324,6 @@
                            </div>
                           </div>
                     </div>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
                </div>
            </div>
      
@@ -401,7 +379,6 @@
         
         // Contact 
         var contactForm = document.getElementById('id02');
-
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == contactForm) {
@@ -410,39 +387,38 @@
         }
                  
         // Slideshow Auto
-
-        
-         // SlideShow Manual
+        var myIndex = 0;
+           carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 12000); // Change image every 12 seconds
+        }
         var slideIndex = 1;
         showDivs(slideIndex);
-
         function plusDivs(n) {
           showDivs(slideIndex += n);
         }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
         function showDivs(n) {
           var i;
           var x = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-white", "");
-          }
           x[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " w3-white";
         }
+        
                  
         </script>
     </body>
       
 </html>
-
 
