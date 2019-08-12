@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta name="description" content="Automotive Dealer Management Services">
+            <meta name="keywords" content>
+            <meta charset="UTF-8">
+            <meta name="viewpoint" content="width=device-width, initial-scale=1">
+            <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+            <title>ADMS</title>
+            <link rel='stylesheet' href='styles.css'/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        </head>
+        
+        <style>
+  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .menu-container {
+            color: #fff;
+            background-color: #000080;  /* Blue */
+            padding: 10px 0;
+            display: flex;
+            
+        }
+        .menu {
+            width: 1500px;
+            display: flex;
+          justify-content: space-between;
+           
+        }
+        .titleT{
+            margin-left: 15px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+                
+            
+          .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                .dropdown-content {
+                  display: none;
+                  color: black;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  border-radius: 7%;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  padding: 12px 16px;
+                  z-index: 1;
+                }
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                .eDrp{
+                box-shadow: 0px 1px 0px 0px #888888;
+                }
+                
+           .header-container {
+            color: #FFFFFF;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("diversity.jpg");
+            height: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+            
+        .header {
+            width: 1500px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+           align-items: center;
+             /* Add this */
+          }
+                
+       .second {
+          font-size: 80px;
+        }
+            
+            /*No underline button*/
+            a:link {
+                  text-decoration: none;
+            }
+            a:visited {
+                  text-decoration: none;
+            }
+                
+                
+            /* Set a style for all buttons */
+            button {
+                background-color: #000080;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                font-size: 19px;
+            }
+            
+            button:hover {
+                opacity: 0.8;
+            }
+            
+            .about,
+            .contact,
+            .events,
+            .services,{
+                padding: 0;
+                border-radius: 100%;
+                background-color: #000080;
+                margin-left: 10px;
+                font-size: 23px;
+            }
+            
+                         /*Services pic example sections*/
+            .service-container{
+                background-color: #A9A9A9;
+                display: flex;
+            }
+            
+            .column {
+                  float: left;
+                  width: 55%;
+                  margin-top: 15px;
+                  border-top-right-radius: 7%;
+                  border-bottom-right-radius: 7%;
+                  box-shadow: 5px 20px 25px #888888;
+                  
+                }
+            
+            img.office{
+             border-top-right-radius: 7%;
+             border-bottom-right-radius: 7%;
+            }
+                
+                .column2 {
+                  color: #F8F8F8;
+                  float: right;
+                  width: 50%;
+                  height: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                }
+                
+                .column3 {
+                  float: right;
+                  width: 55%;
+                  margin-top: 15px;
+                  border-top-left-radius: 7%;
+                  border-bottom-left-radius: 7%;
+                  box-shadow: 5px 20px 25px #888888;
+                  
+                }
+            
+            img.office2{
+             border-top-left-radius: 7%;
+             border-bottom-left-radius: 7%;
+            }
+                
+                .column4 {
+                  color: #F8F8F8;
+                  float: left;
+                  width: 50%;
+                  height: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-end;
+                }
+                
+            .descript{
+            padding-top: 20px;
+            }
+            
+                 /* Footer-Contact*/
+              .footer {
+                  display: flex;
+                  justify-content: space-between;
+                }
+                .footer-item {
+                  color: white;
+                  background-color: #99badd;
+                  height: 200px;
+                  flex: 1;
+                }
+                
+                .footer-three {
+                  flex: 2;
+                }
+                
+                .footer-one,
+                .footer-three {
+                  background-color: #000080;
+                  flex: initial;
+                  width: 300px;
+                }
+                
+             .insight{
+                margin-left: 8px;
+            }
+                
+         </style>
+    <body>
+            
+            <!--Menu section-->
+            <div id='menu-container' class='menu-container'>
+            <div id='menu' class='menu'>
+                <div class = "titleT"><a href="index.html?#titleT"><font size="72">ADMS</font></a></div>
+                <div class='links'>
+                    <div><button class="about" style="width:auto;"><a href="index.html?#about">About</a></button></div>
+                    <div><button class="events" style="width:auto;"><a href="SaleEvent.html?#events">Events</a></button></div>
+                   <div class="dropdown">
+                    <div><button class="services" style="width:auto;"><a href="services.html?#servicesT">Service <i class="fa fa-caret-down"></i></a></button></div>
+                        <div class="dropdown-content">
+                                <ul style="list-style-type:none;">
+                                    <div>
+                                       <li class="eDrp"><a href="services.html?#crm">CRM Training</a></li>
+                                       <li class="eDrp"><a href="services.html?#salesT">Sales Training</a></li>
+                                       <li class="eDrp"><a href="services.html?#salesM">Sales Management</a></li>
+                                       <li class="eDrp"><a href="services.html?#directM">Direct Mail</a></li>
+                                     </div>
+                                  </ul>
+                           </div>
+                        </div>
+                   <div><button class="contact" style="width:auto;"><a href="contact.html">Contact</a></button></div>
+                </div>
+            </div>
+            </div>
+            
+             <!--Banner-->
+            <div class="header-container">
+               <div class ="header">
+                    <div class="mySlides">
+                              <div class="second">
+                                 <p>Services</p>
+                              </div>
+                     </div>
+               </div>
+              </div>
+     
+            
+              <!--Events-->
+            <div class="service-container">
+              <div class="column">
+                    <img src="woman-1245926_1280.jpg" alt="Nature" class="office" style="width:100%">
+                </div>
+             <div class="column2">
+              <article>
+               <header>
+                   <h2 class="w3-center" id="events">Events</h2>
+                </header>
+                      <ol type="a" class="descript">
+                          <li>5 Day Sale</li>
+                          <li>7 Day Sale</li>
+                          <li>14 Day Sale</li>
+                     </ol> 
+               </article>
+              </div>
+            </div>
+
+  
+              <!--Footer Contact-->
+         
+           <div class='footer'>
+                  <div class='footer-item footer-one'>
+                        <h6 class="insight">Contact Us</h6>
+                            <ul class="insight" style="list-style-type:none;">
+                                 <li><i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:joshua_townsend5@yahoo.com"> Some Email</a></li>
+                                 <br/>
+                                 <li><i class="fa fa-phone" style="font-size:24px"></i><a href="tel:757-803-4308"> 757-803-4308 </a>
+                            </ul>
+                   </div>
+                  <div class='footer-item footer-two'></div>
+                  <div class='footer-item footer-three'></div>
+         </div>
+            
+        <!--JavaScript-->
+         <script>
+                 
+
+        
+                 
+        </script>
+    </body>
+      
+</html>
