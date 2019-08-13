@@ -21,6 +21,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+            
+          .navbar {
+            margin-bottom: 0!important;
+            overflow: hidden;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
         
         .menu-container {
             color: #fff;
@@ -45,7 +53,8 @@
             justify-content: center;
             align-items: center;
         }
-                
+         
+            
             
           .dropdown {
                   position: relative;
@@ -320,14 +329,20 @@
             
     </style>
     <body>
-            
-            <!--Menu section-->
-            <div id='menu-container' class='menu-container'>
-            <div id='menu' class='menu'>
-                <div class = "titleT" id="titleT"><a href="#titleT"><font size="72">ADMS</font></a></div>
-                <div class='links'>
-                 <div><button class="about" style="width:auto;"><a href="#about">About</a></button></div>
-                  <div><button class="events" style="width:auto;"><a href="SaleEvent.html?#events">Events</a></button></div>
+             <!--Menu section-->
+            <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                      </button>
+                      <a class="titleT" href="index.html"><font size="72">ADMS</font></a>
+                    </div>
+                  <div class="collapse navbar-collapse" id="myNavbar" class='links'>
+                    <div><button class="about" style="width:auto;"><a href="#about">About</a></button></div>
+                    <div><button class="events" style="width:auto;"><a href="SaleEvent.html?#events">Events</a></button></div>
                    <div class="dropdown">
                         <div><button class="services" style="width:auto;"><a href="services.html">Service <i class="fa fa-caret-down"></i></a></button></div>
                             <div class="dropdown-content">
@@ -344,9 +359,9 @@
                     
                     <div><button class="contact" style="width:auto;"><a href="contact.html">Contact</a></button></div>
                 </div>
-            </div>
-            </div>
-            
+                  </div>
+                </nav>
+
             <!--Banner section-->
             <div class="header-container">
                <div class ="header">
