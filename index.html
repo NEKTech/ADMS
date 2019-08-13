@@ -21,6 +21,7 @@
             padding: 0;
             background-color: white; 
          }
+            
        * { 
             margin: 0;
             padding: 0;
@@ -44,13 +45,13 @@
         }
                 
         .nav {
+            margin-left:70px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
         }
          
-            
             
           .dropdown {
                    position: relative;
@@ -310,10 +311,10 @@
             </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a href="index.html?#about">About</a></li>
-              <li><a href="SaleEvent.html?#events">Events</a></li>
+              <li><a class="about" href="index.html?#about">About</a></li>
+              <li><a class="events" href="SaleEvent.html?#events">Events</a></li>
               <div class="dropdown">
-              <li><a href="services.html">Service <i class="fa fa-caret-down"></i></a></li>
+              <li><a class="services" href="services.html">Service <i class="fa fa-caret-down"></i></a></li>
                      <div class="dropdown-content">
                           <ul style="list-style-type:none;">
                                <li class="eDrp"><a href="services.html?#crm">CRM Training</a></li>
@@ -323,7 +324,7 @@
                           </ul>
                       </div>
                </div>
-             <li><a href="contact.html">Contact</a></li>
+             <li><a class="contact" href="contact.html">Contact</a></li>
             </ul>
           </div>
           </div>
