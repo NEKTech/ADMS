@@ -31,7 +31,7 @@
             position: sticky;
             top: 0; /* Position the navbar at the top of the page */
             width: 100%; /* Full width */
-            
+            z-index: 1;
         }
   
             
@@ -84,7 +84,6 @@
             color: #FFFFFF;
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("atlanta-1617318_1280.jpg");
             height: 70%;
-            z-index: -1;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -97,12 +96,14 @@
             width: 1500px;
             height: 400px;
             display: flex;
+            z-index: -1;
              /* Add this */
          }
             
 
          .fresh{
             position: static;
+            z-index: -1;
             height: 70%;
             background-position: center;
             background-repeat: no-repeat;
