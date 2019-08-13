@@ -4,14 +4,16 @@
             <meta name="description" content="Automotive Dealer Management Services">
             <meta name="keywords" content>
             <meta charset="UTF-8">
-            <meta name="viewpoint" content="width=device-width, initial-scale=1">
+            <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
             <title>ADMS</title>
             <link rel='stylesheet' href='styles.css'/>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         </head>
         
     <style>
@@ -30,278 +32,41 @@
           }
             
             
-            /*Banner Work*/
-        .mySlides {display:none;}
-   
-        .header-container {
-            color: #FFFFFF;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("atlanta-1617318_1280.jpg");
-            height: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            z-index: -1;
-        }
-            
-        .header {
-            width: 1500px;
-            height: 400px;
-            display: flex;
-             /* Add this */
-            position: static;
-         }
-         .fresh{
-            height: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: static;
-            display: flex;
-            justify-content: center;
-            }
-            
-          .second {
-           margin: 10px;
-           padding: 15px;
-          font-size: 50px;
-        }
-            
-          .fStart{
-            font-size: 50px;
-            }
-            
-            
-            .freshStart{
-               justify-content: flex-start;
-               margin: 10px;
-               padding: 15px;
-               color: #FFFFFF;
-            }
-            
-            .offers{
-            margin: 10px;
-            padding: 10px;
-            font-size: 15px;
-            color: #FFFFFF;
-            }
-            
-            /* Set a style for all buttons */
-            .button {
-                background-color: #000080;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-               font-size: 19px;
-            }
-            
-            .button:hover {
-                opacity: 0.6;
-            }
-            
-            .about,
-            .contact,
-            .events,
-            .services,{
-                padding: 0;
-                border-radius: 100%;
-                background-color: #000080;
-                margin-left: 10px;
-                font-size: 18px;
-            } 
-            
-            /* Add Zoom Animation */
-            .animate {
-                -webkit-animation: animatezoom 0.6s;
-                animation: animatezoom 0.6s
-            }
-            @-webkit-keyframes animatezoom {
-                from {-webkit-transform: scale(0)} 
-                to {-webkit-transform: scale(1)}
-            }
-            
-            @keyframes animatezoom {
-                from {transform: scale(0)} 
-                to {transform: scale(1)}
-            }
-            /* Change styles for span and cancel button on extra small screens */
-            @media screen and (max-width: 300px) {
-                span.psw {
-                    display: block;
-                    float: none;
-                }
-                .cancelbtn {
-                    width: 100%;
-                }
-            }
-            
-            /* About Section*/
-             .service-container{
-                background-color: #A9A9A9;
-                display: flex;
-            }
-            
-            .descript{
-            padding-top: 20px;
-            }
-            
-              .column {
-                  float: left;
-                  width: 55%;
-                  margin-top: 15px;
-                  border-top-right-radius: 7%;
-                  border-bottom-right-radius: 7%;
-                  box-shadow: 5px 20px 25px #888888;
-                  
-                }
-            
-              .column2 {
-                  color: #F8F8F8;
-                  float: right;
-                  width: 50%;
-                  height: 50%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: flex-start;
-                }
-            
-            img.office{
-             border-top-right-radius: 7%;
-             border-bottom-right-radius: 7%;
-            }
-            
-            /* Event Section*/
-             .column3 {
-                  float: right;
-                  width: 55%;
-                  margin-top: 15px;
-                  border-top-left-radius: 7%;
-                  border-bottom-left-radius: 7%;
-                  box-shadow: 5px 20px 25px #888888;
-                  
-                }
-            
-            img.office2{
-             border-top-left-radius: 7%;
-             border-bottom-left-radius: 7%;
-            }
-            
-            .column4 {
-                  color: #F8F8F8;
-                  float: left;
-                  width: 50%;
-                  height: 50%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: flex-end;
-                }
-            
-             /* Footer-Contact*/
-              .footer {
-                  position: relative;
-                  bottom: 0;
-                  display: flex;
-                  justify-content: space-between;
-                  
-                }
-            
-                .footer-item {
-                  color: white;
-                  border: 1px solid #fff;
-                  background-color: #99badd;
-                  height: 200px;
-                  flex: 1;
-                }
-                
-                .footer-three {
-                  flex: 2;
-                }
-                
-                .footer-one,
-                .footer-three {
-                  background-color: #000080;
-                  flex: initial;
-                  width: 300px;
-                }
-            
-            .insight{
-            margin-left: 8px;
-            }
             
     </style>
     <body>
             
             <!--Menu section-->
-            <div id='menu-container' class='menu-container'>
-            <div id='menu' class='menu'>
-                <div class = "titleT" id="titleT"><a href="#titleT"><font size="72">ADMS</font></a></div>
-                <div class='links'>
-                 <div><button class="about" style="width:auto;"><a href="index.html?#about">About</a></button></div>
-                  <div><button class="events" style="width:auto;"><a href="SaleEvent.html?#events">Events</a></button></div>
-                   <div class="dropdown">
-                        <div><button class="services" style="width:auto;"><a href="services.html">Service <i class="fa fa-caret-down"></i></a></button></div>
-                            <div class="dropdown-content">
-                                    <ul style="list-style-type:none;">
-                                        <div>
-                                            <li class="eDrp"><a href="services.html?#crm">CRM Training</a></li>
-                                            <li class="eDrp"><a href="services.html?#salesT">Sales Training</a></li>
-                                            <li class="eDrp"><a href="services.html?#salesM">Sales Management</a></li>
-                                            <li class="eDrp"><a href="services.html?#directM">Direct Mail</a></li>
-                                        </div>
-                                    </ul>
-                            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                    
-                    <div><button class="contact" style="width:auto;"><a href="contact.html">Contact</a></button></div>
-                </div>
-            </div>
-            </div>
-            
-            <!--Side Bar section-->
-            <div id="mySidebar" class="sidebar">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Clients</a>
-                  <a href="#">Contact</a>
-                </div>
-            
-            <!--Banner section-->
-            <div class="header-container">
-               <div class ="header">
-                    <div class="mySlides w3-animate-right">
-                              <div class="second">
-                                 <div class="automotive">Automotive</div>
-                                 <div class="dealer">Dealer</div>
-                                 <div class="management">Management</div>
-                                 <div class="serviceB">Services</div>
-                              </div>
-                     </div>
-                     <div class="mySlides w3-animate-right">
-                        <div class="fresh">
-                          <div class="freshStart">
-                            <ul style="list-style-type:none;">
-                                <li class="fStart">Fresh Start</li>
-                                <li class="skit">
-                                      <p>ADMS offers a fresh start with variety of services, </p>
-                                      <p>that will put you in first place!</p>
-                                </li>
-                                <div class="offers">
-                                  <li><a href="services.html?#crm">- CRM Training</a></li>
-                                  <li><a href="services.html?#salesT">- Sales Training</a></li>
-                                  <li><a href="services.html?#salesM">- Sales Management</a></li>
-                                  <li><a href="services.html?#directM">- Direct Mail</a></li>
-                                </div>
-                              </ul>
-                           </div>
-                          </div>
-                    </div>
-               </div>
-           </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
      
             
             <!--About-->
