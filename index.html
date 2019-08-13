@@ -21,20 +21,20 @@
             padding: 0;
             box-sizing: border-box;
         }
-         
-          body, html {
+            
+         body, html {
             height: 100%;
             padding: 0;
             background-color: white;
           }
-        
+            
         .menu-container {
             color: #fff;
             background-color: #000080;  /* Blue */
             padding: 10px 0;
             display: flex;
             position: fixed;
-            z-index:1;
+            z-index: 1;
         }
                 
         .menu {
@@ -95,9 +95,9 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
             display: flex;
             justify-content: center;
-            z-index: 2;
         }
             
         .header {
@@ -176,7 +176,63 @@
                 font-size: 18px;
             } 
             
-                   
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+            
+            /*Avatar pic for pop up fix*/    
+            .container {
+                padding: 16px;
+            }
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            
+            .modal .small {
+                font-size: 13px;
+            }
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)} 
+                to {-webkit-transform: scale(1)}
+            }
+            
+            @keyframes animatezoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+            
             /* About Section*/
              .service-container{
                 background-color: #A9A9A9;
