@@ -31,6 +31,19 @@
            font-family: "Lato", sans-serif;
           }
             
+            /*Menu Section*/
+            .active{
+                    background-color: #4CAF50;
+                    color: white;
+                  }
+
+                  .active:hover {
+                  background-color: #ccc;
+                }
+                .active:after {
+                  content: "\2212";
+                }
+            
               /*No underline button*/
             a:link {
                   text-decoration: none;
@@ -136,7 +149,7 @@
     <body>
             
             <!--Menu section-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-light" style="background-color: #000080;">
                   <a class="navbar-brand" href="index.html?#navbar-brand">ADMS</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
