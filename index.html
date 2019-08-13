@@ -6,54 +6,54 @@
             <meta charset="UTF-8">
             <meta name="viewpoint" content="width=device-width, initial-scale=1">
             <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <title>ADMS</title>
             <link rel='stylesheet' href='styles.css'/>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         </head>
         
     <style>
-        body, html{
-           height: 100%;
-            padding: 0;
-            background-color: white; 
-         }
-            
-       * { 
+  
+       * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-            
-          .navbar {
-            margin-bottom: 0!important;
-            overflow: hidden;
-            position: -webkit-sticky; /* Set the navbar to fixed position */
-            position: sticky;
-            top: 0; /* Position the navbar at the top of the page */
-            width: 100%; /* Full width */
-            z-index: 1;
-        }
-  
-            
-        .titleT, .nav-link{
-            color: white;
-             margin-left: 15px;
+        
+        .menu-container {
+            color: #fff;
+            background-color: #000080;  /* Blue */
+            padding: 10px 0;
+            display: flex;
+            position: fixed;
+            z-index:1;
         }
                 
-         .navbar-nav {
+        .menu {
+            width: 1500px;
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            color: white;
+          justify-content: space-between;
+           
         }
+        .titleT{
+            margin-left: 15px;
+        }
+                
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         
             
-        .dropdown-menu {
+            
+          .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                .dropdown-content {
                   display: none;
                   color: black;
                   position: absolute;
@@ -64,7 +64,12 @@
                   padding: 12px 16px;
                   z-index: 1;
                 }
-              
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                .eDrp{
+                box-shadow: 0px 1px 0px 0px #888888;
+                }
             
             /*No underline button*/
             a:link {
@@ -80,28 +85,27 @@
         .header-container {
             color: #FFFFFF;
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("atlanta-1617318_1280.jpg");
-            z-index: -2;
             height: 70%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
             justify-content: center;
+            z-index: 2;
         }
             
-          .header {
+        .header {
             width: 1500px;
             height: 400px;
             display: flex;
              /* Add this */
          }
-            
-
          .fresh{
             height: 70%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
             display: flex;
             justify-content: center;
             }
@@ -155,32 +159,18 @@
                 opacity: 0.6;
             }
             
+            .about,
+            .contact,
+            .events,
+            .services,{
+                padding: 0;
+                border-radius: 100%;
+                background-color: #000080;
+                margin-left: 10px;
+                font-size: 18px;
+            } 
             
-            /* Add Zoom Animation */
-            .animate {
-                -webkit-animation: animatezoom 0.6s;
-                animation: animatezoom 0.6s
-            }
-            @-webkit-keyframes animatezoom {
-                from {-webkit-transform: scale(0)} 
-                to {-webkit-transform: scale(1)}
-            }
-            
-            @keyframes animatezoom {
-                from {transform: scale(0)} 
-                to {transform: scale(1)}
-            }
-            /* Change styles for span and cancel button on extra small screens */
-            @media screen and (max-width: 300px) {
-                span.psw {
-                    display: block;
-                    float: none;
-                }
-                .cancelbtn {
-                    width: 100%;
-                }
-            }
-            
+                   
             /* About Section*/
              .service-container{
                 background-color: #A9A9A9;
@@ -278,38 +268,31 @@
     <body>
             
             <!--Menu section-->
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #000080;">
-                  <a class="titleT" href="index.html"><font size="72">ADMS</font></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav navbar-light" style="color: white;">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="index.html?#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="SaleEvent.html?#events">Events</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Service
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="services.html?#crm">CRM Training</a>
-                          <a class="dropdown-item" href="services.html?#salesT">Sales Training</a>
-                          <a class="dropdown-item" href="services.html?#salesM">Sales Management</a>
-                          <a class="dropdown-item" href="services.html?#directM">Diret Mail</a>
+            <div id='menu-container' class='menu-container'>
+            <div id='menu' class='menu'>
+                <div class = "titleT" id="titleT"><a href="#titleT"><font size="72">ADMS</font></a></div>
+                <div class='links'>
+                 <div><button class="about" style="width:auto;"><a href="index.html?#about">About</a></button></div>
+                  <div><button class="events" style="width:auto;"><a href="SaleEvent.html?#events">Events</a></button></div>
+                   <div class="dropdown">
+                        <div><button class="services" style="width:auto;"><a href="services.html">Service <i class="fa fa-caret-down"></i></a></button></div>
+                            <div class="dropdown-content">
+                                    <ul style="list-style-type:none;">
+                                        <div>
+                                            <li class="eDrp"><a href="services.html?#crm">CRM Training</a></li>
+                                            <li class="eDrp"><a href="services.html?#salesT">Sales Training</a></li>
+                                            <li class="eDrp"><a href="services.html?#salesM">Sales Management</a></li>
+                                            <li class="eDrp"><a href="services.html?#directM">Direct Mail</a></li>
+                                        </div>
+                                    </ul>
+                            </div>
                         </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
+                    
+                    <div><button class="contact" style="width:auto;"><a href="contact.html">Contact</a></button></div>
+                </div>
+            </div>
+            </div>
             
-
             <!--Banner section-->
             <div class="header-container">
                <div class ="header">
@@ -406,7 +389,9 @@
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
-        }         
+        }
+        
+                 
         </script>
     </body>
       
