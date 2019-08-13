@@ -17,6 +17,7 @@
     <style>
   
        * {
+            height:100%;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -29,21 +30,18 @@
             top: 0; /* Position the navbar at the top of the page */
             width: 100%; /* Full width */
         }
-            
-           .menu-container {
-            color: #fff;
-            background-color: #000080;  /* Blue */
-            padding: 10px 0;
-            display: flex;
-            
-        }
-                
-        .menu {
-            width: 1500px;
-            display: flex;
-          justify-content: space-between;
-           
-        }
+              .active 
+  {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .active, .accordion:hover {
+  background-color: #ccc;
+}
+.active:after {
+  content: "\2212";
+}
             
         .titleT{
             margin-left: 15px;
