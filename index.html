@@ -52,30 +52,11 @@
             color: white;
         }
          
-            
-          .dropdown {
-                   position: relative;
-                  display: inline-block;
-                  z-index: 2;
-                }
-            
-                .dropdown-content {
-                  display: none;
-                  color: black;
-                  position: absolute;
-                  background-color: #f9f9f9;
-                  border-radius: 7%;
-                  min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                  padding: 12px 16px;
-                  z-index: 2;
-                }
+
                 .dropdown:hover .dropdown-content {
                   display: block;
                 }
-                .eDrp{
-                box-shadow: 0px 1px 0px 0px #888888;
-                }
+              
             
             /*No underline button*/
             a:link {
@@ -313,7 +294,8 @@
             <ul class="nav navbar-nav">
               <li><a class="about" href="index.html?#about">About</a></li>
               <li><a class="events" href="SaleEvent.html?#events">Events</a></li>
-              <li class="dropdown"><a class="services" href="services.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
+              <li class="dropdown">
+                  <a class="services" href="services.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
                      <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
                         <a href="services.html?#crm">CRM Training</a></li>
                         <a href="services.html?#salesT">Sales Training</a></li>
