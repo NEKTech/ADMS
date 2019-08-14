@@ -61,6 +61,62 @@
                   text-decoration: none;
             }
             
+	      /*Banner Work*/
+        .mySlides {display:none;}
+   
+        .header-container {
+            color: #FFFFFF;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("atlanta-1617318_1280.jpg");
+            height: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+            
+        .header {
+            width: 1500px;
+            height: 400px;
+            display: flex;
+             /* Add this */
+         }
+         .fresh{
+            height: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            }
+            
+          .second {
+           margin: 10px;
+           padding: 15px;
+          font-size: 50px;
+        }
+            
+          .fStart{
+            font-size: 50px;
+            }
+            
+            
+            .freshStart{
+               justify-content: flex-start;
+               margin: 10px;
+               padding: 15px;
+               color: #FFFFFF;
+            }
+            
+            .offers{
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+            color: #FFFFFF;
+            }
+	    
            /* About Section*/
              .service-container{
                 background-color: #A9A9A9;
@@ -130,7 +186,6 @@
                   bottom: 0;
                   display: flex;
                   justify-content: space-between;
-                  z-index: ;
                 }
             
                 .footer-item {
@@ -193,7 +248,39 @@
                     </ul>
                   </div>
                 </nav>
-
+	    
+		<!--Banner-->
+	     <div class="header-container">
+               <div class ="header">
+                    <div class="mySlides w3-animate-right">
+                              <div class="second">
+                                 <div class="automotive">Automotive</div>
+                                 <div class="dealer">Dealer</div>
+                                 <div class="management">Management</div>
+                                 <div class="serviceB">Services</div>
+                              </div>
+                     </div>
+                     <div class="mySlides w3-animate-right">
+                        <div class="fresh">
+                          <div class="freshStart">
+                            <ul style="list-style-type:none;">
+                                <li class="fStart">Fresh Start</li>
+                                <li class="skit">
+                                      <p>ADMS offers a fresh start with variety of services, </p>
+                                      <p>that will put you in first place!</p>
+                                </li>
+                                <div class="offers">
+                                  <li><a href="services.html?#crm">- CRM Training</a></li>
+                                  <li><a href="services.html?#salesT">- Sales Training</a></li>
+                                  <li><a href="services.html?#salesM">- Sales Management</a></li>
+                                  <li><a href="services.html?#directM">- Direct Mail</a></li>
+                                </div>
+                              </ul>
+                           </div>
+                          </div>
+                    </div>
+               </div>
+           </div>
      
             
             <!--About-->
