@@ -121,8 +121,6 @@
              .service-container{
                 background-color: #A9A9A9;
                 display: flex;
-		position: relative;
-		z-index: 1;
             }
             
             .descript{
@@ -182,7 +180,8 @@
             
              /* Footer-Contact*/
               .footer {
-                  position: relative;
+                  position: fixed;
+		  z-index: -1;
                   bottom: 0;
                   display: flex;
                   justify-content: space-between;
