@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-	  <meta name="description" content="Automotive Dealer Management Services">
-            <meta name="keywords" content>
-            <meta charset="UTF-8">
-            <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-            <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-	   <meta name="MobileOptimized" content="width" />
-            <title>ADMS</title>
-            <link rel='stylesheet' href='styles.css'/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        </head>
-        
-    <style>
-            
-         body, html {
-            height: 100%;
-            padding: 0;
-            background-color: white;
-           font-family: "Lato", sans-serif;
-          }
-	    
-	     /*Menu Section*/
-	    
-	    .navbar{
-		margin-bottom: 0!important;
-	    position: fixed;
-	    z-index: 1;
-	    top:0;
-	    width: 100%;
-	    }
-                .dropdown-menu{
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel='stylesheet' href='styles.css'/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+<style>
+  body,html {
+    height:100%;
+    padding: 0px;
+    background-color: white;
+  }
+  .active 
+  {
+    background-color: #ca741c;
+    color: white;
+  }
+  
+  .active, .accordion:hover {
+  background-color: #ca741c;
+}
+.active:after {
+  content: "\2212";
+}
+  .navbar {
+    margin-bottom: 0!important;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+ 
+  .dropdown-menu{
                   display: none;
                   color: black;
                   position: absolute;
@@ -52,24 +54,23 @@
             .nav-link{
             color: black;
             }
-           
+
             .active{
-                    color: white;
+            color: white;
                   }
-            
-              /*No underline button*/
-            a:link, a:visited  {
+
+        /*No underline button*/
+            a:link {
                   text-decoration: none;
             }
             a:visited {
                   text-decoration: none;
             }
-            
-	      /*Banner Work*/
+  
+            /*Banner Work*/
         .mySlides {display:none;}
-   
-        .header-container {
-	    margin-top: 70px;
+
+       .header-container {
             color: #FFFFFF;
             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("atlanta-1617318_1280.jpg");
             height: 65%;
@@ -77,36 +78,31 @@
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
+            justify-content: center;
         }
             
         .header {
             display: flex;
-	   font-size: 95px;
+           justify-content: flex-start;
+           align-items: center;
+          font-size: 95px;
           }
-	    
-         .fresh{
-            height: 60%;
+    
+          .fresh{
+            height: 65%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
-		 position: relative;
             justify-content: center;
             }
             
           .second {
            padding: 15px;
           font-size: 60px;
-	position: relative;
         }
-            
-          .fStart{
-            font-size: 60px;
-		  position: relative;
-            }
-            
-            
-            .freshStart{
+
+        .freshStart{
                justify-content: flex-start;
                padding: 15px;
                color: #FFFFFF;
@@ -159,162 +155,185 @@
 	    hr {
     	    visibility: hidden;
 	      }
-
               .insight{
                 margin-left: 8px;
               }
-	    
-   
-    </style>
-    <body>
-            
-            <!--Menu section-->
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #82CAFA;">
-                  <a class="navbar-brand" href="index.html?#navbar-brand"><font size="6">ADMS</font></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="index.html?#about">About <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="SaleEvent.html?#navbar-brand">Events</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html?#navbar-brand" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Services
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="services.html?#crm">CRM Training</a>
-                          <a class="dropdown-item" href="services.html?#salesT">Sales Training</a>
-                          <a class="dropdown-item" href="services.html?#salesM">Sales Management</a>
-                          <a class="dropdown-item" href="services.html?#directM">Direct Mail</a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html?#navbar-brand">Contact</a>
-                      </li>                  
-                    </ul>
-                  </div>
-                </nav>
-	    
-		<!--Banner-->
-	     <div class="header-container">
+  
+</style>
+</head>
+<body>
+
+    <!--Menu section-->
+<nav class="navbar navbar-inverse" style="background-color: #82CAFA;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">ADMS</a>
+    </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a \ef="index.html?#about">Home</a></li>
+      <li><a href="SaleEvent.html">Events</a></li>
+      <li class="nav-item dropdown"><a href="services.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="services.html?#crm">CRM Training</a>
+                <a class="dropdown-item" href="services.html?#salesT">Sales Training</a>
+                <a class="dropdown-item" href="services.html?#salesM">Sales Management</a>
+                <a class="dropdown-item" href="services.html?#directM">Direct Mail</a>
+              </div>
+    </li>
+
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!--Banner-->
+            <div class="header-container">
                <div class ="header">
-                    <div class="mySlides w3-animate-right">
-                              <div class="second">
-                                 <div class="automotive">Automotive</div>
-                                 <div class="dealer">Dealer</div>
-                                 <div class="management">Management</div>
-                                 <div class="serviceB">Services</div>
-                              </div>
-                     </div>
-                     
-               </div>
-           </div>
-     
-            
-            <!--About-->
-                <div class="service-container">
-                      <div class="column">
-                            <img src="car-604019_1280.jpg" alt="Nature" class="office" style="width:100%">
+                    <div class="mySlides">
+                        <div class="second" style="font-size:30px;"">
+                              <div class="automotive">Automotive</div>
+                              <div class="dealer">Dealer</div>
+                              <div class="management">Management</div>
+                              <div class="serviceB">Services</div>
                         </div>
-                     <div class="column2">
-                      <article>
-                       <header>
-                            <h2 class="w3-center" id="about">About</h2>
-                        </header>
-                              <h4>What are you about</h4> 
-                       </article>
-                      </div>
-                    </div>
-
-             <!-- Footer -->
-	<div class="footer" footer class="page-footer font-small blue pt-4" style="
-	    color: white;">
-	  <!-- Footer Links -->
-	  <div class="container-fluid text-center text-md-left">
-	    <!-- Grid row -->
-	    <div class="row">
-	      <!-- Grid column -->
-	      <div class="col-md-6 mt-md-0 mt-3">
-		<!-- Content -->
-		<br>
-		<br>
-		<p>Headquarters</p>
-		<p>Atlanta, Ga</p>
-
-	      </div>
-	      <!-- Grid column -->
-	  <hr class="clearfix w-100 d-md-none pb-3">
-
-	      <!-- Grid column -->
-	      <div class="col-md-3 mb-md-0 mb-3">
-		<!-- Links -->
-		<h5 class="text-uppercase">CONTACT</h5>
-		<ul class="list-unstyled">
-		  <li>
-		    <i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:mvondell37@yahoo.com"> mvondell37@yahoo.com</a>
-		  </li>
-		  <li>
-		    <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:252-675-2002"> 252-675-2002</a>
-		  </li>
-		</ul>
-	      </div>
-	      <!-- Grid column -->
-	      <hr class="clearfix w-100 d-md-none pb-3">
-	      <!-- Grid column -->
-	      <div class="col-md-3 mb-md-0 mb-3">
-	      <!-- Grid column -->
-	    </div>
-	    <!-- Grid row -->
-	  </div>
-	  <!-- Footer Links -->
-	  <!-- Copyright -->
-	  <div class="footer-copyright text-center py-3" style="
-	    background: #bbbab1;
-	">© 2018 Copyright:
-	    <a href="#">ADMS</a>
-	  </div>
-	  <!-- Copyright -->
-</footer>
-	       
-        <!--JavaScript-->
-	<script>	 
-		// Slideshow Auto
-		var myIndex = 0;
-		   carousel();
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 12000); // Change image every 12 seconds
-		}
-		var slideIndex = 1;
-		showDivs(slideIndex);
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		}
-		
- 	</script>
-    </body>
+                     </div>
+               </div>
+            </div>
+  
+  <!--Info--><hr class="clearfix w-100 d-md-none pb-3"><hr class="clearfix w-100 d-md-none pb-3">
+<div class="container">
+  <h1 style=" text-align:center; font-size:50px; color:grey; font-family:helvetica">
+    <span class="size3">Stay Ahead of the Competitors</span>
+  </h1>
+  
+  <hr class="h">
+  
+  <div class="col-md-3 mt-md-0 mt-3">
+        <!-- Content -->
+        <h5 class="text-uppercase">A Provider of Business Solutions</h5>
+        <p>Our Engineers solve problems for the Greater Good</p>
+        <p>Cost Effective Solutions</p>
+        
+      </div>
+      <!-- Grid column -->
+  
       
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Featured Work</h5>
+
+        <ul class="list-unstyled">
+          <li>
+           <p>Web Design</p>
+          </li>
+          <li>
+           <p>Mobile Development in Agile Environment</p>
+          </li>
+          <li>
+           <p>Data Security</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+  
+      
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Our Engineers</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>Engineers at NEK Tech. have various backgrounds in development, security, and infrastructure.</p>
+          </li>
+          <li>
+            <p>They are proven to provide the best work for our customers.</p>
+          </li>
+        </ul>
+
+      </div>
+  
+  
+  <div class="col-md-3 mt-md-0 mt-3">
+    <ul>    
+        <i="" class="fa fa-user" style="font-size:150px"></i=>
+    </ul>   
+  </div>
+  
+</div>
+                      
+ <!-- Footer -->
+<div class="footer" footer class="page-footer font-small blue pt-4" style="
+    color: white;
+    background-color: #343c38;>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- Content -->
+        <br>
+        <br>
+        <p>Headquarters</p>
+        <p>Atlanta, Ga</p>
+        
+      </div>
+      <!-- Grid column -->
+  <hr class="clearfix w-100 d-md-none pb-3">
+      
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <!-- Links -->
+        <h5 class="text-uppercase">CONTACT</h5>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:mvondell37@yahoo.com"> mvondell37@yahoo.com</a>
+          </li>
+          <li>
+            <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:252-675-2002"> 252-675-2002</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="
+    background: #bbbab1;
+">© 2018 Copyright:
+    <a href="#">ADMS</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->                            
+                 
+                
+</body>
+  
+  
+  <script>
+    
+    
+    
+  </script>
 </html>
 
