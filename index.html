@@ -31,13 +31,12 @@
 }
   .navbar {
     margin-bottom: 0!important;
-    overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
   }
  
-  .dropdown-menu{
+  	.dropdown-menu{
                   display: none;
                   color: black;
                   position: absolute;
@@ -198,7 +197,7 @@
             <div class="header-container">
                <div class ="header">
                     <div class="mySlides">
-                        <div class="second" style="font-size:30px;"">
+                        <div class="second" style="font-size:30px;">
                               <div class="automotive">Automotive</div>
                               <div class="dealer">Dealer</div>
                               <div class="management">Management</div>
@@ -207,74 +206,21 @@
                      </div>
                </div>
             </div>
-  
-  <!--Info--><hr class="clearfix w-100 d-md-none pb-3"><hr class="clearfix w-100 d-md-none pb-3">
-<div class="container">
-  <h1 style=" text-align:center; font-size:50px; color:grey; font-family:helvetica">
-    <span class="size3">Stay Ahead of the Competitors</span>
-  </h1>
-  
-  <hr class="h">
-  
-  <div class="col-md-3 mt-md-0 mt-3">
-        <!-- Content -->
-        <h5 class="text-uppercase">A Provider of Business Solutions</h5>
-        <p>Our Engineers solve problems for the Greater Good</p>
-        <p>Cost Effective Solutions</p>
-        
-      </div>
-      <!-- Grid column -->
-  
-      
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Featured Work</h5>
-
-        <ul class="list-unstyled">
-          <li>
-           <p>Web Design</p>
-          </li>
-          <li>
-           <p>Mobile Development in Agile Environment</p>
-          </li>
-          <li>
-           <p>Data Security</p>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-  
-      
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Our Engineers</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <p>Engineers at NEK Tech. have various backgrounds in development, security, and infrastructure.</p>
-          </li>
-          <li>
-            <p>They are proven to provide the best work for our customers.</p>
-          </li>
-        </ul>
-
-      </div>
-  
-  
-  <div class="col-md-3 mt-md-0 mt-3">
-    <ul>    
-        <i="" class="fa fa-user" style="font-size:150px"></i=>
-    </ul>   
-  </div>
-  
-</div>
+						   
+		<!--About-->				   
+   	<div class="service-container">
+                      <div class="column">
+                            <img src="car-604019_1280.jpg" alt="Nature" class="office" style="width:100%">
+                        </div>
+                     <div class="column2">
+                      <article>
+                       <header>
+                            <h2 class="w3-center" id="about">About</h2>
+                        </header>
+                              <h4>What are you about</h4> 
+                       </article>
+                      </div>
+                    </div>
                       
  <!-- Footer -->
 <div class="footer" footer class="page-footer font-small blue pt-4" style="
@@ -330,10 +276,40 @@
 </body>
   
   
-  <script>
-    
-    
-    
-  </script>
+<!--JavaScript-->
+         <script>
+                 
+        // Slideshow Auto
+        var myIndex = 0;
+           carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 12000); // Change image every 12 seconds
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        
+                 
+        </script>
 </html>
 
