@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-           <meta name="description" content="Automotive Dealer Management Services">
+            <meta name="description" content="Automotive Dealer Management Services">
             <meta name="keywords" content>
             <meta charset="UTF-8">
             <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,17 +24,6 @@
             background-color: white;
            font-family: "Lato", sans-serif;
           }
-	    
-	  .row::after {
-	  content: "";
-	  clear: both;
-	  display: table;
-	}
-	    
-	[class*="col-"] {
-	  float: left;
-	  padding: 15px;
-	}
 	    
 	     /*Menu Section*/
 	    
@@ -76,9 +65,7 @@
             }
             
 	      /*Banner Work*/
-
-	    
-           .mySlides {display:none;}
+        .mySlides {display:none;}
    
         .header-container {
 	    margin-top: 70px;
@@ -87,12 +74,11 @@
             height: 65%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
 	    position: relative;
             display: flex;
             justify-content: center;
         }
-	    
             
         .header {
             width: 1500px;
@@ -133,58 +119,85 @@
             font-size: 15px;
             color: #FFFFFF;
             }
-               
 	    
-	    hr {
-    	    visibility: hidden;
-	      }
-              .insight{
-                margin-left: 8px;
-              }
-	    
-	    /* For mobile phones: */
-		[class*="col-"] {
-		  width: 100%;
-		}
-	    
-	    @media only screen and (min-width: 600px) {
-		  /* For tablets: */
-		  .col-s-1 {width: 8.33%;}
-		  .col-s-2 {width: 16.66%;}
-		  .col-s-3 {width: 25%;}
-		  .col-s-4 {width: 33.33%;}
-		  .col-s-5 {width: 41.66%;}
-		  .col-s-6 {width: 50%;}
-		  .col-s-7 {width: 58.33%;}
-		  .col-s-8 {width: 66.66%;}
-		  .col-s-9 {width: 75%;}
-		  .col-s-10 {width: 83.33%;}
-		  .col-s-11 {width: 91.66%;}
-		  .col-s-12 {width: 100%;}
-		}
-		@media only screen and (min-width: 768px) {
-		  /* For desktop: */
-		  .col-1 {width: 8.33%;}
-		  .col-2 {width: 16.66%;}
-		  .col-3 {width: 25%;}
-		  .col-4 {width: 33.33%;}
-		  .col-5 {width: 41.66%;}
-		  .col-6 {width: 50%;}
-		  .col-7 {width: 58.33%;}
-		  .col-8 {width: 66.66%;}
-		  .col-9 {width: 75%;}
-		  .col-10 {width: 83.33%;}
-		  .col-11 {width: 91.66%;}
-		  .col-12 {width: 100%;}
-		}
-
-	    
-   
+           /* About Section*/
+             .service-container{
+                background-color: #A9A9A9;
+                display: flex;
+            }
+            
+            .descript{
+            padding-top: 20px;
+            }
+            
+              .column {
+                  float: left;
+                  width: 55%;
+                  margin-top: 15px;
+                  border-top-right-radius: 7%;
+                  border-bottom-right-radius: 7%;
+                  box-shadow: 5px 20px 25px #888888;
+                  
+                }
+            
+              .column2 {
+		    margin-top: 40px;
+                  color: #F8F8F8;
+                  float: right;
+                  width: 50%;
+                  height: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+            
+            img.office{
+             border-top-right-radius: 7%;
+             border-bottom-right-radius: 7%;
+            }
+            
+            
+              /* Footer-Contact*/
+              .footer {
+                  bottom: 0;
+                  display: flex;
+                  justify-content: space-between;
+                }
+            
+                .footer-item {
+                  color: white;
+                  background-color: #e3f2fd;
+                  height: 200px;
+		background: url("mesh-1430107_1280.png");
+                  flex: 1;
+                }
+                
+                .footer-three {
+                  flex: 2;
+                }
+                
+	    .footer-two{
+		    color: white;
+		display: flex;
+                  justify-content: center;
+		    align-items: flex-end;
+	    }
+                .footer-one,
+                .footer-three {
+                  background-color: black;
+                  flex: initial;
+                  width: 400px;
+                }
+            
+            .insight{
+            margin-left: 8px;
+            }
+            
     </style>
     <body>
             
             <!--Menu section-->
-            <nav class="navbar navbar-expand{-sm|-md} navbar-light" style="background-color: #82CAFA;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #82CAFA;">
                   <a class="navbar-brand" href="index.html?#navbar-brand"><font size="6">ADMS</font></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -216,8 +229,7 @@
                 </nav>
 	    
 		<!--Banner-->
-	    <div class="row">
-	     <div class="header-container col-3 col-s-3" >
+	     <div class="header-container">
                <div class ="header">
                     <div class="mySlides w3-animate-right">
                               <div class="second">
@@ -248,93 +260,74 @@
                     </div>
                </div>
            </div>
-
      
             
+            <!--About-->
+                <div class="service-container">
+                      <div class="column">
+                            <img src="car-604019_1280.jpg" alt="Nature" class="office" style="width:100%">
+                        </div>
+                     <div class="column2">
+                      <article>
+                       <header>
+                            <h2 class="w3-center" id="about">About</h2>
+                        </header>
+                              <h4>What are you about</h4> 
+                       </article>
+                      </div>
+                    </div>
 
-             <!-- Footer -->
-	<div class="footer" footer class="page-footer font-small blue pt-4" style="
-	    color: white; background-color: #82CAFA;">
-	  <!-- Footer Links -->
-	  <div class="container-fluid text-center text-md-left">
-	    <!-- Grid row -->
-	    <div class="row">
-	      <!-- Grid column -->
-	      <div class="col-md-6 mt-md-0 mt-3">
-		<!-- Content -->
-		<br>
-		<br>
-		<p>Headquarters</p>
-		<p>Atlanta, Ga</p>
-
-	      </div>
-	      <!-- Grid column -->
-	  <hr class="clearfix w-100 d-md-none pb-3">
-
-	      <!-- Grid column -->
-	      <div class="col-md-3 mb-md-0 mb-3">
-		<!-- Links -->
-		<h5 class="text-uppercase">CONTACT</h5>
-		<ul class="list-unstyled">
-		  <li>
-		    <i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:mvondell37@yahoo.com"> mvondell37@yahoo.com</a>
-		  </li>
-		  <li>
-		    <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:252-675-2002"> 252-675-2002</a>
-		  </li>
-		</ul>
-	      </div>
-	      <!-- Grid column -->
-	      <hr class="clearfix w-100 d-md-none pb-3">
-	      <!-- Grid column -->
-	      <div class="col-md-3 mb-md-0 mb-3">
-	      <!-- Grid column -->
-	    </div>
-	    <!-- Grid row -->
-	  </div>
-	  <!-- Footer Links -->
-	  <!-- Copyright -->
-	  <div class="footer-copyright text-center py-3" style="
-	    background: #ccc;
-	">© 2018 Copyright:
-	    <a href="#">ADMS</a>
-	  </div>
-	  <!-- Copyright -->
-</footer>
-	       
+  
+              <!--Footer Contact-->
+         
+           <div class='footer'>
+                  <div class='footer-item footer-one'></div>
+                  <div class='footer-item footer-two'>
+                            <ul class="insight" style="list-style-type:none;">
+                                 <li><i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:mvondell37@yahoo.com"> mvondell37@yahoo.com</a></li>
+                                 <br/>
+                                 <li><i class="fa fa-phone" style="font-size:24px"></i><a href="tel:252-675-2002"> 252-675-2002 </a>
+				<li><p style="font-family:verdana, sans-serif; font-size:15px"> <br>© 2019 ADMS</br>All Rights Reserved</p></li>
+                            </ul>
+			</div>
+                  <div class='footer-item footer-three'></div>
+         </div>
+            
         <!--JavaScript-->
-	<script>	 
-		// Slideshow Auto
-		var myIndex = 0;
-		   carousel();
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 12000); // Change image every 12 seconds
-		}
-		var slideIndex = 1;
-		showDivs(slideIndex);
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		}
-		
- 	</script>
+         <script>
+                 
+        // Slideshow Auto
+        var myIndex = 0;
+           carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 12000); // Change image every 12 seconds
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        
+                 
+        </script>
     </body>
       
 </html>
