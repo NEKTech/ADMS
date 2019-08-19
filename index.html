@@ -67,40 +67,59 @@
 	      /*Banner Work*/
 
 	    
-           /* About Section*/
-             .service-container{
-                background-color: #A9A9A9;
-                display: flex;
+           .mySlides {display:none;}
+   
+        .header-container {
+	    margin-top: 70px;
+            color: #FFFFFF;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("atlanta-1617318_1280.jpg");
+            height: 65%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+	    position: relative;
+            display: flex;
+            justify-content: center;
+        }
+            
+        .header {
+            width: 1500px;
+            height: 400px;
+            display: flex;
+             /* Add this */
+         }
+         .fresh{
+            height: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
             }
             
-            .descript{
-            padding-top: 20px;
+          .second {
+           margin: 10px;
+           padding: 15px;
+          font-size: 60px;
+        }
+            
+          .fStart{
+            font-size: 60px;
             }
             
-              .column {
-                  float: left;
-                  width: 55%;
-                  margin-top: 15px;
-                  border-top-right-radius: 7%;
-                  border-bottom-right-radius: 7%;
-                  box-shadow: 5px 20px 25px #888888;
-                  
-                }
             
-              .column2 {
-		    margin-top: 40px;
-                  color: #F8F8F8;
-                  float: right;
-                  width: 50%;
-                  height: 50%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                }
+            .freshStart{
+               justify-content: flex-start;
+               margin: 10px;
+               padding: 15px;
+               color: #FFFFFF;
+            }
             
-            img.office{
-             border-top-right-radius: 7%;
-             border-bottom-right-radius: 7%;
+            .offers{
+            margin: 10px 0px;
+            padding: 10px;
+            font-size: 15px;
+            color: #FFFFFF;
             }
                
 	    
@@ -120,8 +139,6 @@
 		/* Medium devices (desktops, 992px and up) */
 		@media (min-width: @screen-md-min) { ... }
 
-		/* Large devices (large desktops, 1200px and up) */
-		@media (min-width: @screen-lg-min) { ... }
 	    
    
     </style>
@@ -160,23 +177,40 @@
                 </nav>
 	    
 		<!--Banner-->
+	     <div class="header-container">
+               <div class ="header">
+                    <div class="mySlides w3-animate-right">
+                              <div class="second">
+                                 <div class="automotive">Automotive</div>
+                                 <div class="dealer">Dealer</div>
+                                 <div class="management">Management</div>
+                                 <div class="serviceB">Services</div>
+                              </div>
+                     </div>
+                     <div class="mySlides w3-animate-right">
+                        <div class="fresh">
+                          <div class="freshStart">
+                            <ul style="list-style-type:none;">
+                                <li class="fStart">Fresh Start</li>
+                                <li class="offers">
+                                      <p>ADMS offers a fresh start with variety of services, </p>
+                                      <p>that will put you in first place!</p>
+                                </li>
+                                <div>
+                                  <li>- CRM Training</li>
+                                  <li>- Sales Training</li>
+                                  <li>- Sales Management</li>
+                                  <li>- Direct Mail</li>
+                                </div>
+                              </ul>
+                           </div>
+                          </div>
+                    </div>
+               </div>
+           </div>
 
      
             
-            <!--About-->
-                <div class="service-container">
-                      <div class="column">
-                            <img src="car-604019_1280.jpg" alt="Nature" class="office" style="width:100%">
-                        </div>
-                     <div class="column2">
-                      <article>
-                       <header>
-                            <h2 class="w3-center" id="about">About</h2>
-                        </header>
-                              <h4>What are you about</h4> 
-                       </article>
-                      </div>
-                    </div>
 
              <!-- Footer -->
 	<div class="footer" footer class="page-footer font-small blue pt-4" style="
