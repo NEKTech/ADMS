@@ -71,7 +71,6 @@
 	    margin-top: 70px;
             color: #FFFFFF;
             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("atlanta-1617318_1280.jpg");
-            height: 65%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -83,10 +82,12 @@
         .header {
 		position: relative;
             display: flex;
+		width: 100%;
+		
              /* Add this */
          }
          .fresh{
-            height: 60%;
+		 width: 100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -201,13 +202,10 @@
 		/* Medium devices (desktops, 992px and up) */
 		@media (min-width: @screen-md-min) { ... }
 
-		/* Large devices (large desktops, 1200px and up) */
-		@media (min-width: @screen-lg-min) { ... }
 	    
 	    @media (max-width: @screen-xs-max) { ... }
 		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
 		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-		@media (min-width: @screen-lg-min) { ... }
             
     </style>
     <body>
