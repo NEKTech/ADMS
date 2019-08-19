@@ -4,7 +4,7 @@
             <meta name="description" content="Automotive Dealer Management Services">
             <meta name="keywords" content>
             <meta charset="UTF-8">
-            <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="viewpoint" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
             <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
             <title>ADMS</title>
             <link rel='stylesheet' href='styles.css'/>
@@ -192,12 +192,29 @@
             .insight{
             margin-left: 8px;
             }
+	    
+	    /* Extra small devices (phones, less than 768px) */
+		/* No media query since this is the default in Bootstrap */
+
+		/* Small devices (tablets, 768px and up) */
+		@media (min-width: @screen-sm-min) { ... }
+
+		/* Medium devices (desktops, 992px and up) */
+		@media (min-width: @screen-md-min) { ... }
+
+		/* Large devices (large desktops, 1200px and up) */
+		@media (min-width: @screen-lg-min) { ... }
+	    
+	    @media (max-width: @screen-xs-max) { ... }
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+		@media (min-width: @screen-lg-min) { ... }
             
     </style>
     <body>
             
             <!--Menu section-->
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #82CAFA;">
+            <nav class="navbar navbar-expand{-sm|-md|-lg} navbar-light" style="background-color: #82CAFA;">
                   <a class="navbar-brand" href="index.html?#navbar-brand"><font size="6">ADMS</font></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
