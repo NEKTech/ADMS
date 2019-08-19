@@ -124,6 +124,11 @@
                 background-color: #A9A9A9;
                 display: flex;
             }
+	    
+	    .service-containers{
+	    background-color: #A9A9A9;
+                display: flex;
+	    }
             
             .descript{
             padding-top: 20px;
@@ -156,10 +161,14 @@
             }
             
 	    .smallScreen{
-		    margin-top: 40px;
+		   margin-top: 40px;
                   color: #F8F8F8;
-	    	display: flex;
-                  align: center;
+                  float: right;
+                  width: 50%;
+                  height: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
 	    }
             
               /* Footer-Contact*/
@@ -269,13 +278,13 @@
             
             <!--About-->
                 <div class="service-container">
-                      <div class="column .d-none .d-lg-block .d-xl-block">
+                      <div class="column .d-none .d-xl-block">
                             <img src="car-604019_1280.jpg" alt="Nature" class="office" style="width:100%">
                         </div>
                      <div class="column2">
                       <article>
                        <header>
-                            <h2 class="w3-center" id="about">About</h2>
+                            <h2 class="w3-center .d-none .d-xl-block" id="about">About</h2>
                         </header>
                               <h4>What are you about</h4> 
                        </article>
@@ -283,7 +292,7 @@
                     </div>
 	    
 	    <!--About Mobile-->
-	    <div class="service-container .d-block .d-sm-block .d-md-none">
+	    <div class="service-containers .d-block .d-sm-block .d-md-none">
                       <article>
                        <header>
                             <h2 class="smallScreen" id="about">About</h2>
