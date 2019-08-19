@@ -83,9 +83,8 @@
 		position: relative;
             display: flex;
 		width: 100%;
-		
-             /* Add this */
          }
+	    
          .fresh{
 		 width: 100%;
             background-position: center;
@@ -156,6 +155,13 @@
              border-bottom-right-radius: 7%;
             }
             
+	    .smallScreen{
+		    margin-top: 40px;
+                  color: #F8F8F8;
+	    	display: flex;
+                  justify-content: center;
+                  align-items: center;
+	    }
             
               /* Footer-Contact*/
               .footer {
@@ -193,24 +199,6 @@
             margin-left: 8px;
             }
 	    
-	    /* Extra small devices (phones, less than 768px) */
-		/* No media query since this is the default in Bootstrap */
-
-		/* Small devices (tablets, 768px and up) */
-		@media (min-width: @screen-sm-min) { ... }
-
-		/* Medium devices (desktops, 992px and up) */
-		@media (min-width: @screen-md-min) { ... }
-
-		/* Large devices (large desktops, 1200px and up) */
-		@media (min-width: @screen-lg-min) { ... }
-
-	    
-	    @media (max-width: @screen-xs-max) { ... }
-		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-		@media (min-width: @screen-lg-min) { ... }
-            
     </style>
     <body>
             
@@ -288,7 +276,18 @@
                      <div class="column2">
                       <article>
                        <header>
-                            <h2 class="w3-center .col-sm-12 col-md-3 text-center text-md-left mb-3 mb-md-0" id="about">About</h2>
+                            <h2 class="w3-center" id="about">About</h2>
+                        </header>
+                              <h4>What are you about</h4> 
+                       </article>
+                      </div>
+                    </div>
+	    
+	    <!--About Mobile-->
+	    <div class="service-container">
+                      <article>
+                       <header>
+                            <h2 class="smallScreen .d-block .d-sm-none" id="about">About</h2>
                         </header>
                               <h4>What are you about</h4> 
                        </article>
